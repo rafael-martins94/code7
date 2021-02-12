@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Dívidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="principal">
+    <h1>Lista de Dívidas</h1>
+    <button id="addDebt">Adicionar uma dívida</button>
+    <div class="lista">
+    </div>
+    <div class="modal-add hidden">
+        <div class="container">
+            <div class="content">
+                <h1>Nova dívida</h1>
+                <label to="cliente">Escolher Cliente</label>
+                <select name="cliente" id="cliente">
+                </select>
+                <label to="motivo">Motivo</label>
+                <textarea placeholder="Motivo" name="motivo" id="motivo"></textarea>
+                <label to="valor">Valor</label>
+                <input placeholder="Valor" type="number" name="valor" id="valor">
+                <button id="salvar-divida" onclick="criarDivida()">Salvar</button>
+                <img id="closeAdd" src="img/x.svg">
+            </div>
+        </div>
+    </div>
+    <div class="modal-edit hidden">
+        <div class="container">
+            <div class="content">
+                <h1>Editar dívida</h1>
+                <label to="clienteEdit">Escolher Cliente</label>
+                <select name="clienteEdit" id="clienteEdit">
+                </select>
+                <label to="motivoEdit">Motivo</label>
+                <textarea placeholder="Motivo" name="motivoEdit" id="motivoEdit"></textarea>
+                <label to="valorEdit">Valor</label>
+                <input placeholder="Valor" type="number" name="valorEdit" id="valorEdit">
+                <button id="salvar-divida-edicao" onclick="salvar()">Salvar</button>
+                <img id="closeEdit" src="img/x.svg">
+                <input type="hidden" name="idUsuario" id="idUsuario">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

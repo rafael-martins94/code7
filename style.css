@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#principal #addDebt {
+    padding: 6px 16px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#principal #addDebt:hover {
+    background-color: black;
+    color: white;
+}
+
+#principal h1 {
+    margin: 16px 0;
+}
+
+#principal .lista {
+    width: 80%;
+}
+
+#principal .lista .item {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 32px;
+    margin-bottom: 8px;
+}
+
+#principal .lista .item p {
+    font-size: 24px;
+}
+
+#principal .lista .item .upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#principal .lista .item .lower-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#principal .lista .item .lower-container p {
+    max-width: 60%;
+}
+
+#principal .lista .item .lower-container button {
+    padding: 6px 16px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms;
+    margin: auto;
+}
+
+#principal .lista .item .lower-container button:hover {
+    background-color: black;
+    color: white;
+}
+
+#principal .lista .item .lower-container .edit-buttons {
+    margin-top: auto;
+}
+
+#principal .modal-add {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.657);
+}
+
+#principal .modal-add .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#principal .modal-add .container .content {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+#principal .modal-add .container .content input {
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+#principal .modal-add .container .content textarea {
+    resize: vertical;
+    max-height: 300px;
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#principal .modal-add .container .content select {
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#principal .modal-add .container .content button {
+    padding: 6px 16px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms;
+    margin: 8px auto auto auto;
+    outline: none;
+}
+
+#principal .modal-add .container .content label {
+    margin-top: 8px;
+}
+
+/* --------------------------- */
+
+#principal .modal-edit {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.657);
+}
+
+#principal .modal-edit .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#principal .modal-edit .container .content {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+#principal .modal-edit .container .content input {
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+#principal .modal-edit .container .content textarea {
+    resize: vertical;
+    max-height: 300px;
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#principal .modal-edit .container .content select {
+    font-size: 22px;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#principal .modal-edit .container .content button {
+    padding: 6px 16px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms;
+    margin: 8px auto auto auto;
+    outline: none;
+}
+
+#principal .modal-edit .container .content label {
+    margin-top: 8px;
+}
+
+h1, p, button, label, textarea, input, select {
+    font-family: "Roboto Condensed";
+}
+
+#principal #closeAdd {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#principal #closeEdit {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
